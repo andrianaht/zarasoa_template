@@ -1,0 +1,133 @@
+body, div, h1, h2, h3, h4, p, ul, ol, li, dl, dt, dd, img, form, fieldset, blockquote{
+	margin: 0px; 
+	padding: 0px; 
+	border: 0px;
+}
+
+body{
+	font-family: Arial, Helvetica, sans-serif;
+	background: #fff url(images/bg11.png) repeat-x;
+}
+
+.clear {
+	clear: both;
+}
+
+.inner-body {
+	width:980px;
+}
+
+#header {
+	background: white;
+	height: 100px; 
+	padding: 35px 0 0 0; 
+}
+
+	#header ul#nav{
+		float: right;
+		list-style: none;
+		margin: 10px 0 0 0;	
+	}
+
+		#header ul#nav li{
+			float: left;
+			padding: 0 0 0 40px;
+			margin: 0 35px 0 0;
+			background: url(images/nav-separator.png) left no-repeat;
+		}
+	
+		#header ul#nav li: first{
+			background: none;
+		}
+		
+		#header ul#nav li a {
+			font-size: 16px; color:#6d6d6d; text-decoration: none; 
+		}
+			#header ul#nav li a:hover, #header ul#nav li a.active{
+				color: #454545;
+			}
+
+	.logo {
+		width: 225px; 
+			height: 60px;
+			float: left;
+	}
+
+#featured-header{
+		clear: both;
+		height: 370px;
+		background: green;
+	}
+	
+		#featured-header div.featured-text{
+			/*width: 485px;*/
+			width: 320px;
+			float: left;
+		}
+		
+		#featured-header div.featured-text h2{
+			
+		}
+		
+		#featured-header div.featured-text p{
+			color: #fff;
+			font-size: 16px;
+			line-height: 30px;
+			margin: 0 0 15px 0;
+		}
+		
+			#featured-header div.featured-text p a{
+				color: #fff;
+				background: #7b7ba0;
+				padding: 5px; 
+				text-decoration: none;
+			}
+	
+				#featured-header div.featured-text p a:hover{
+					color: #3f3f69;
+				}	
+			
+		#featured-header div.featured-work{
+			float: right;		
+			margin-right: -25px;
+			width: 660px;
+		}
+			
+			#featured-header div.featured-work ul{
+				list-style: none;
+				width: 324px;
+				height: 100%;
+				overflow: hidden;
+				position: relative; top: 51px; right: 78px;
+				background: #fff;
+				
+			}
+			
+			#featured-header div.featured-work img{
+				width: 568px;
+				height: 268px;
+			}			
+	
+#news-container {
+	background: red;
+}
+
+#video-container {
+	background: blue;
+}
+
+#footer-container{
+	background: #f3f3f3; clear: both;
+}
+
+	#footer{
+		padding: 30px 0 50px 0;
+		background:url(images/footer-shadow1.jpg) center top no-repeat;
+		margin: 0 auto;
+		padding: 30px 0 50px 0;
+		background:url(images/footer-shadow1.jpg) center top no-repeat;
+	}
+	
+.test {
+	min-height: 400px;
+}
