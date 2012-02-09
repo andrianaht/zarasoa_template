@@ -9,12 +9,21 @@ body{
 	background: #fff url(images/bg11.png) repeat-x;
 }
 
-.clear {
+.clear:after {
 	clear: both;
+	content: ".";
+	visibility:hidden;
+	display:block;
+}
+
+.clear {
+	zoom:1; /* needs to be here for IE 5+ */
 }
 
 .inner-body {
 	width:980px;
+	margin-left:auto;
+	margin-right:auto;
 }
 
 #header {
@@ -49,8 +58,9 @@ body{
 
 	.logo {
 		width: 225px; 
-			height: 60px;
-			float: left;
+		height: 60px;
+		float: left;
+		background: #ddd;
 	}
 
 #featured-header{
@@ -58,64 +68,60 @@ body{
 		height: 370px;
 		background: green;
 	}
-	
-		#featured-header div.featured-text{
-			/*width: 485px;*/
-			width: 320px;
-			float: left;
-		}
-		
-		#featured-header div.featured-text h2{
-			
-		}
-		
-		#featured-header div.featured-text p{
-			color: #fff;
-			font-size: 16px;
-			line-height: 30px;
-			margin: 0 0 15px 0;
-		}
-		
-			#featured-header div.featured-text p a{
-				color: #fff;
-				background: #7b7ba0;
-				padding: 5px; 
-				text-decoration: none;
-			}
-	
-				#featured-header div.featured-text p a:hover{
-					color: #3f3f69;
-				}	
-			
-		#featured-header div.featured-work{
-			float: right;		
-			margin-right: -25px;
-			width: 660px;
-		}
-			
-			#featured-header div.featured-work ul{
-				list-style: none;
-				width: 324px;
-				height: 100%;
-				overflow: hidden;
-				position: relative; top: 51px; right: 78px;
-				background: #fff;
-				
-			}
-			
-			#featured-header div.featured-work img{
-				width: 568px;
-				height: 268px;
-			}			
+	.animation {
+		float:left;
+		background: #ddd;
+		width:630px;
+		height:250px;
+	}
+	.featuredText{
+		float:right;
+		background: #ddd;
+		width:330px;
+		height:250px;
+	}
 	
 #news-container {
 	background: red;
 }
-
+    .news {
+		float:left;
+		background: #ddd;
+		width:630px;
+		height:250px;
+}
+	.activities {
+		float:right;
+		background: #ddd;
+		width:330px;
+		height:250px;
+}
+	
+.video-top-shadow{
+	text-align:center;
+}
+	
 #video-container {
 	background: blue;
 }
-
+	.video_playback {
+		float:left;
+		background: #ddd;
+		width:630px;
+		height:250px;
+	}
+	.video_playlist {
+		float:right;
+		background: #ddd;
+		width:330px;
+		height:250px;
+	}
+		.video_playlist li{}
+		
+.footer-top-shadow {
+	text-align:center;
+}
+		
 #footer-container{
 	background: #f3f3f3; clear: both;
 }
